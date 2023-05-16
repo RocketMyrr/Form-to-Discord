@@ -110,8 +110,8 @@ function sendEmbed(items, imagesnew){
         }
       },
       imagesnew,
-                ]
-    })
+      ]
+    }).replace("[{\"image", "{\"image").replace("\"}}]", "\"}}")
   };
 
   // Post the data to the webhook.
